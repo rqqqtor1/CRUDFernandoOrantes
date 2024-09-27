@@ -22,7 +22,12 @@ public class ctrlParamedicos implements MouseListener, KeyListener {
         this.vista = vista;
 
         
-        
+        vista.btnGuardar.addMouseListener(this);
+        vista.btnEliminar.addMouseListener(this);
+        vista.btnActualizar.addMouseListener(this);
+        vista.txtCorreo.addKeyListener(this);
+        vista.txtEdad.addKeyListener(this);
+        vista.tbParamedicos.addMouseListener(this);
     }
      
      

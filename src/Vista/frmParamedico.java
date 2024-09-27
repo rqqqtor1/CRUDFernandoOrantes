@@ -39,7 +39,7 @@ public class frmParamedico extends javax.swing.JFrame {
         txtPeso = new java.awt.TextField();
         txtCorreo = new java.awt.TextField();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jtable = new javax.swing.JTable();
+        tbParamedicos = new javax.swing.JTable();
         btnGuardar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnActualizar = new javax.swing.JButton();
@@ -90,7 +90,7 @@ public class frmParamedico extends javax.swing.JFrame {
         label4.setForeground(new java.awt.Color(255, 255, 255));
         label4.setText("Correo");
 
-        jtable.setModel(new javax.swing.table.DefaultTableModel(
+        tbParamedicos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -101,7 +101,7 @@ public class frmParamedico extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane2.setViewportView(jtable);
+        jScrollPane2.setViewportView(tbParamedicos);
 
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -113,6 +113,11 @@ public class frmParamedico extends javax.swing.JFrame {
         btnEliminar.setText("Eliminar");
 
         btnActualizar.setText("Actualizar");
+        btnActualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnActualizarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -206,6 +211,10 @@ public class frmParamedico extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarActionPerformed
 
+    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -250,11 +259,11 @@ public class frmParamedico extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTable jtable;
     private java.awt.Label label1;
     private java.awt.Label label2;
     private java.awt.Label label3;
     private java.awt.Label label4;
+    public javax.swing.JTable tbParamedicos;
     public java.awt.TextField txtCorreo;
     public java.awt.TextField txtEdad;
     public java.awt.TextField txtNombre;

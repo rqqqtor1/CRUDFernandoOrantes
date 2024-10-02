@@ -1,4 +1,6 @@
 --Base de datos--
+
+
 CREATE TABLE tbParamedico(
 UUID_Paramedico VARCHAR2(100),
 Nombre_Paramedico VARCHAR2(100),
